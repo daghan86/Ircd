@@ -102,15 +102,7 @@ namespace Ircd
                         continue;
                     }
 
-                    /*chatGPT suggestion:
-                     * 
-                     *             // Immediate PING response
-            if (line.StartsWith("PING", StringComparison.OrdinalIgnoreCase))
-            {
-                string server = line.Substring(4).Trim();
-                await SendMessage(ircClient, $"PONG {server}");
-                continue;
-            }*/
+
 
                     // Pass message to IRC handler
                     await HandleIRCMessage(ircClient, rawLine);
