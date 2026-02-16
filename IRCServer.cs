@@ -22,7 +22,7 @@ namespace Ircd
             listener = new TcpListener(IPAddress.Any, port);
         }
 
-        string serverName = "MyIRCD";
+        string serverName = "MyIRCD Testserver";
 
         public async Task StartAsync()
         {
