@@ -89,7 +89,7 @@ namespace Ircd
 
                     if (_clients.Any(c => c != client && string.Equals(c.Nickname, newNick, StringComparison.OrdinalIgnoreCase)))
                     {
-                        await client.SendMessage($":{_serverName} 433 * {newNick} :Nickname is already in use");
+                        await client.SendMessage($":{_serverName} 433 * {newNick} :Nickname is already in use.");
                         handled = true;
                         break;
                     }
